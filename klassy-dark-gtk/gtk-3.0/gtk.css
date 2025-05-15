@@ -106,19 +106,22 @@
 @define-color dark_4 rgba(255, 255, 255, 1.00);
 
 
-/* Rounded Corner Fix */
+/* Fix for KDE Rounded Corners (removes rim) */
+decoration {
+	box-shadow: none;
+}
+
+
+/* Sets rounded corners */
 headerbar {
-	border: none; /* <-- Headerbar Line Fix */
+	border: none; 	/* Removes headerbar separator */
 	border-radius: 12px 12px 0 0;
 }
 
-window, window.backround { 
+window, window.backround {
 	border-radius: 0 0 12px 12px;
 }
 
-decoration {
-  box-shadow: none;
-}
 
-/* KDE Colors */
+/* KDE Colors (These are auto imported by KDE when switching color schemes) */
 @import 'colors.css';
