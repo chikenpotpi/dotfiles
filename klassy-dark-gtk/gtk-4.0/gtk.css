@@ -35,10 +35,6 @@
 @define-color shade_color rgba(0, 0, 0, 0.12);
 @define-color scrollbar_outline_color rgba(31, 34, 38, 0.50);
 
-@define-color accent_color rgba(118, 90, 182, 1.00);
-@define-color accent_bg_color rgba(118, 90, 182, 1.00);
-@define-color accent_fg_color rgba(0, 0, 0, 1.00);
-
 @define-color destructive_color rgba(253, 161, 160, 1.00);
 @define-color destructive_bg_color rgba(253, 161, 160, 1.00);
 @define-color destructive_fg_color rgba(0, 0, 0, 1.00);
@@ -51,8 +47,8 @@
 @define-color success_bg_color rgba(146, 207, 156, 1.00);
 @define-color success_fg_color rgba(0, 0, 0, 1.00);
 
-@define-color accent_color rgba(118, 90, 182, 1.00);
-@define-color accent_bg_color rgba(118, 90, 182, 1.00);
+@define-color accent_color @link_color_breeze;
+@define-color accent_bg_color @link_color_breeze;
 @define-color accent_fg_color rgba(0, 0, 0, 1.00);
 
 @define-color error_color rgba(253, 161, 160, 1.00);
@@ -105,6 +101,12 @@
 @define-color dark_3 rgba(218, 218, 218, 1.00);
 @define-color dark_4 rgba(255, 255, 255, 1.00);
 
+:root {
+  --accent-bg-color: @link_color_breeze;
+}
 
-/*Custom Changes*/
+/* Headerbar line removal */
 headerbar { border: none; }
+
+/* KDE Colors (These are auto imported by KDE when switching color schemes) */
+@import 'colors.css';
